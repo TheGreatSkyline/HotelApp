@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fancy Hotel</title>
+  <title>The Highline Haven</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,23 +11,11 @@
   <header>
     <div class="container">
       <nav>
-        <h1>Fancy Hotel</h1>
+        <h1>The Highline Haven</h1>
         <ul>
-          <li>
-            <a href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#services">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#booking">
-              Booking
-            </a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#booking">Booking</a></li>
         </ul>
       </nav>
     </div>
@@ -36,7 +24,7 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Welcome to the Fancy Hotel</h2>
+      <h2>Welcome to The Highline Haven </h2>
       <p>Your luxury getaway destination.</p>
       <a href="#booking" class="btn">Book Now</a>
     </div>
@@ -47,21 +35,25 @@
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-list">
+          <div class="service-item">
+            <a href="luxury.html">
+            <h3>Luxury Rooms</h3>
+            <p>Comfortable and spacious rooms with stunning views.</p>
+          </a>
+          </div>
+          <div class="service-item">
+            <a href="spa_wellnes.html">
+            <h3>Spa & Wellness</h3>
+            <p>Relax and rejuvenate at our world-class spa.</p>
+          </a>
+          </div>
+        
+        
         <div class="service-item">
-          <h3>Luxury Rooms</h3>
-          <p>Comfortable and spacious rooms with stunning views.</p>
-        </div>
-        <div class="service-item">
-          <h3>
-            <a href="spa.html">
-              Spa & Wellness
-            </a>
-          </h3>
-          <p>Relax and rejuvenate at our world-class spa.</p>
-        </div>
-        <div class="service-item">
-          <h3>Fine Dining</h3>
-          <p>Experience gourmet meals crafted by top chefs.</p>
+          <a href="finedining.html">
+            <h3>Fine Dining</h3>
+            <p>Experience gourmet meals crafted by top chefs.</p>
+          </a>
         </div>
       </div>
     </div>
@@ -78,13 +70,20 @@
         <input type="date" id="checkout" required />
         <button type="submit" class="btn">Submit</button>
       </form>
+  
+      <!-- Confirmation Message for Digital Key or Access Code -->
+      <div id="confirmation-message" class="confirmation-message">
+        <h3>Your Booking is Confirmed!</h3>
+        <p>Your digital room key or access code:</p>
+        <p id="access-code" class="access-code"></p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Fancy Hotel. All rights reserved.</p>
+      <p>&copy; 2025 The Highline Haven. All rights reserved.</p>
     </div>
   </footer>
 
