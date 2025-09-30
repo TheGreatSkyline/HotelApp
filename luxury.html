@@ -1,0 +1,68 @@
+<!-- luxury-rooms.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxury Rooms - The Highline Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  document.getElementById('user-access-code').textContent = localStorage.getItem('userAccessCode') || 'Not yet generated';
+
+  <header>
+    <div class="container">
+      <nav>
+        <h1>The Highline Haven</h1>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#booking">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-section">
+    <div class="container">
+      <h2>Luxury Rooms</h2>
+      <div class="scroll-container">
+        <img src="/images/king.jpg" alt="King" height="350" width="350">
+  <img src="images/roomservice1.jpg" alt="Forest" height="350" width="350">
+  <img src="images/roomservice2.jpg" alt="Northern Lights" height="350" width="350">
+  <img src="images/roomservice3.jpg" alt="Mountains" height="350" width="350">
+</div>
+
+      <p>Our luxury rooms are designed to provide ultimate comfort and stunning views. Each room features:</p>
+      <ul>
+        <li>King-size beds with premium bedding</li>
+        <li>Panoramic city or ocean views</li>
+        <li>High-speed Wi-Fi and 42" smart TV</li>
+        <li>Elegant furnishings and decor</li>
+        <li>24/7 room service</li>
+      </ul>
+    </div>
+  </section>
+  <section class="detail-section">
+    <div class="container">
+      <h2>Luxury Rooms</h2>
+      <p>Our luxury rooms offer unparalleled comfort and stunning views. You can now access your room directly with a digital key or access code upon booking.</p>
+      
+      <h3>Your Digital Key:</h3>
+      <p id="user-access-code">Loading...</p> <!-- Placeholder for access code -->
+
+      <p>With your unique access code, simply head to your room and use your digital key to open the door. Enjoy your stay!</p>
+      
+      <img src="images/luxury-room.jpg" alt="Luxury Room" class="detail-image" width="300" height="300"/>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 The Highline Haven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
